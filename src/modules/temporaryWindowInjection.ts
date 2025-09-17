@@ -198,6 +198,8 @@ import SafariItemsRequirement from './requirements/SafariItemsRequirement';
 import SafariCatchRequirement from './requirements/SafariCatchRequirement';
 import ItemRequirement from './requirements/ItemRequirement';
 import ChristmasPresent from './items/ChristmasPresent';
+import GoalTracker from './goalTracker/GoalTracker';
+import ItemGoal from './goalTracker/ItemGoal';
 
 Object.assign(<any>window, {
     SaveSelector,
@@ -406,4 +408,6 @@ Object.assign(<any>window, {
     SafariCatchRequirement,
     ItemRequirement,
     ChristmasPresent,
+    GoalTracker,
+    ItemGoal,
 });

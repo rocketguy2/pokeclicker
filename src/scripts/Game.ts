@@ -51,7 +51,8 @@ class Game {
         public purifyChamber: PurifyChamber,
         public weatherApp: WeatherApp,
         public zMoves: ZMoves,
-        public pokemonContest: PokemonContest
+        public pokemonContest: PokemonContest,
+        public goalTracker: GoalTracker
     ) {
         this._gameState = ko.observable(GameConstants.GameState.loading);
     }
@@ -94,6 +95,7 @@ class Game {
         this.farming.initialize();
         this.specialEvents.initialize();
         this.pokeballFilters.initialize();
+        this.goalTracker.initialize();
         this.load();
 
         // Update if the achievements are already completed
